@@ -1,0 +1,176 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+@font-face{
+    font-family: DomineRegular;
+    src: url(../font/Domine/Domine-Regular.ttf);
+}
+@font-face{
+    font-family: DomineBold;
+    src:url(../font/Domine/Domine-Bold.ttf);
+}
+@font-face{
+    font-family:RobotoRegular;
+    src: url(../font/Roboto/Roboto-Regular.ttf);
+}
+@font-face{
+    font-family: RobotoMedium;
+    src:url(../font/Roboto/Roboto-Medium.ttf);
+}
+@font-face{
+    font-family: RobotoLight;
+    src:url(../font/Roboto/Roboto-Light.ttf);
+}
+
+
+h1{
+    font-family: DomineBold;
+
+}
+h2{
+    font-family: DomineRegular;
+
+}
+h3{
+    font-family:RobotoLight;
+
+}
+a{
+    font-family: RobotoRegular;
+
+}
+
+body{
+    font-family: RobotoRegular;
+
+}
+
+p{
+    font-family: RobotoRegular;
+
+}
+
+
+@media only screen and (max-width: 1080px){
+    .menu{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;    
+        -webkit-box-align: center;    
+            -ms-flex-align: center;    
+                align-items: center;
+        overflow: hidden;
+        background-color: white;
+        position: fixed;
+        width: 100%;
+        height:0;
+        z-index: 2;
+        font-size: 150%;
+    }
+    .nav{
+        all:unset;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        height:-webkit-max-content;
+        height:-moz-max-content;
+        height:max-content;
+        width: 100%;
+        -webkit-box-shadow:0px 2px 2px 0px rgba(0,0,0,0.2);
+                box-shadow:0px 2px 2px 0px rgba(0,0,0,0.2);
+    }
+
+    #nav-btn-container{
+        all:unset;
+        display: block;
+        height: 3rem;
+        width:4rem;
+        position: absolute;
+        top:3rem;
+        left: 80%;
+        z-index: 3;
+        -webkit-transition: all ease-in-out 1s;
+        -o-transition: all ease-in-out 1s;
+        transition: all ease-in-out 1s;
+    }
+    #nav-btn-checkbox{
+        display: none;
+    }
+
+    #nav-btn{
+        display: block;
+        background-color: #003459;
+        height: 0.2rem;
+        width: 2.5rem;
+        position: relative;
+        -webkit-transition: all ease-in-out 1s;
+        -o-transition: all ease-in-out 1s;
+        -webkit-transition: all ease-in-out 0.5s;
+        -o-transition: all ease-in-out 0.5s;
+        transition: all ease-in-out 0.5s;
+    }
+    #nav-btn:before{
+        display: block;
+        background-color: inherit;
+        top: 0.5rem;
+        height: 100%;
+        width:100%;
+        content: "";
+        position: absolute;
+        -webkit-transition: all ease-in-out 1s;
+        -o-transition: all ease-in-out 1s;
+        -webkit-transition: all ease-in-out 0.5s;
+        -o-transition: all ease-in-out 0.5s;
+        transition: all ease-in-out 0.5s;
+    }
+    #nav-btn:after{
+        display: block;
+        background-color: inherit;
+        top: 1rem;
+        height: 100%;
+        width: 100%;
+        content: "";
+        position: absolute;
+    
+        -webkit-transition: all ease-in-out 1s;
+    
+        -o-transition: all ease-in-out 1s;
+    
+        -webkit-transition: all ease-in-out 0.5s;
+    
+        -o-transition: all ease-in-out 0.5s;
+    
+        transition: all ease-in-out 0.5s;
+    }
+    #nav-btn-checkbox:checked ~#nav-btn-container #nav-btn{
+        top:0.5rem;
+        -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+    }
+    #nav-btn-checkbox:checked ~#nav-btn-container #nav-btn:before{
+        background-color: rgba(0,0,0,0); 
+    }
+
+    #nav-btn-checkbox:checked ~#nav-btn-container #nav-btn:after{
+     top:0rem;
+     -webkit-transform: rotate(90deg);
+         -ms-transform: rotate(90deg);
+             transform: rotate(90deg);
+    }
+}

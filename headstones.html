@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HeadStones</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/css/headstones.css">
+    <link rel="stylesheet" href="static/css/nav.css">
+    
+</head>
+<body>
+<div class='nav'>
+    <div id="LOGO"></div>
+    <input id="nav-btn-checkbox" type="checkbox">  
+    <label onclick="menu()" for="nav-btn-checkbox" id="nav-btn-container"><span id="nav-btn"></span></label>
+    <ul class="menu">
+        <a href="index.html"><li>HOME PAGE</li></a>
+        <a href="about_us.html"><li>ABOUT US</li></a>
+        <a href="headstones.html"><li>HEADSTONES</li></a>
+        <a><li></li></a>
+    </ul>
+</div>
+
+<div class="gallery">
+    <div>
+        <h1>OUR HEADSTONES</h1>
+    </div>
+    <div class="gallery-content">
+    <div id="starter">       
+     <div id="starter-content-div">
+        <div id="starter-logo"></div>
+        <div>    
+        <h3>Starter</h3>
+            <p>
+            These are beautifully crafted headstones 
+            designed to suit your budget needs.
+            </p>
+            </div>
+            <button onclick="starter_click()" class="more-btn">SEE MORE</button>
+     </div>
+     
+        <div id="starter-content">
+                <div id="content-head">    
+                    <h1>Starter</h1>
+                    <button onclick="back_gallery()" id="back-btn">BACK</button>
+                </div>    
+            <div id="content-layout">   
+            <div><img src="static/img/starter1.jpg"><p><b>Starter 1</b> R1200</p> </div>
+            <div><img src="static/img/starter2.jpg"><p><b>Starter 2</b> R1200</p> </div>
+            <div><img src="static/img/starter3.jpg"><p><b>Starter 3</b> R1200</p> </div>
+            <div><img src="static/img/starter4.jpg"><p><b>Starter 4</b> R1200</p> </div>
+            <div><img src="static/img/starter5.jpg"><p><b>Starter 5</b> R1200</p> </div>
+            <div><img src="static/img/starter6.jpg"><p><b>Starter 6</b> R1200</p> </div>
+            <div><img src="static/img/starter7.jpg"><p><b>Starter 7</b> R1200</p> </div>
+            <div><img src="static/img/starter8.jpg"><p><b>Starter 8</b> R1200</p> </div>
+        </div>
+</div>
+</div>
+
+
+
+<div id="medium">       
+    <div id="medium-content-div">
+       <div id="medium-logo"></div>
+       <div>
+       <h3>Medium</h3>
+       <p>
+           These are beautifully crafted headstones 
+           designed to suit your budget needs.
+       </p>
+       </div>
+       <button onclick="medium_click()" class="more-btn">SEE MORE</button>
+   
+    </div>
+    <div id="medium-content">
+       <div id="content-head">    
+       <h1>Medium</h1>
+       <button onclick="back_gallery()" id="back-btn">BACK</button>
+   </div>    
+       <div id="content-layout">
+       <div><img src="static/img/starter1.jpg"><p><b>Medium 1</b> R1200</p> </div>
+       <div><img src="static/img/starter2.jpg"><p><b>Medium 2</b> R1200</p> </div>
+       <div><img src="static/img/starter3.jpg"><p><b>Medium 3</b> R1200</p> </div>
+       <div><img src="static/img/starter4.jpg"><p><b>Medium 4</b> R1200</p> </div>
+       <div><img src="static/img/starter5.jpg"><p><b>Medium 5</b> R1200</p> </div>
+       <div><img src="static/img/starter6.jpg"><p><b>Medium 6</b> R1200</p> </div>
+       <div><img src="static/img/starter7.jpg"><p><b>Medium 7</b> R1200</p> </div>
+       <div><img src="static/img/starter8.jpg"><p><b>Medium 8</b> R1200</p> </div>
+     </div>
+</div>
+</div>
+
+
+
+<div id="premium">
+        <div id="premium-content-div">
+        <div id="premium-logo"></div>
+        <div>
+        <h3>Premium</h3>
+        <p>
+            This is our most premium range of unique headstones and
+             can be crafted according to your specifications or design.
+        </p>
+        </div>
+        <button onclick="premium_click()" class="more-btn">SEE MORE</button>
+    </div>
+    <div id="premium-content">
+        <div id="content-head">    
+            <h1>Premium</h1><button onclick="back_gallery()" id="back-btn">BACK</button>
+        </div>    
+        <div id="content-layout">     
+            <div><img src="static/img/starter1.jpg"><p><b>Premium 1</b> R1200</p> </div>
+            <div><img src="static/img/starter2.jpg"><p><b>Premium 2</b> R1200</p> </div>
+            <div><img src="static/img/starter3.jpg"><p><b>Premium 3</b> R1200</p> </div>
+            <div><img src="static/img/starter4.jpg"><p><b>Premium 4</b> R1200</p> </div>
+            <div><img src="static/img/starter5.jpg"><p><b>Premium 5</b> R1200</p> </div>
+            <div><img src="static/img/starter6.jpg"><p><b>Premium 6</b> R1200</p> </div>
+            <div><img src="static/img/starter7.jpg"><p><b>Premium 7</b> R1200</p> </div>
+            <div><img src="static/img/starter8.jpg"><p><b>Premium 8</b> R1200</p> </div>
+              </div>
+    </div>
+    </div> 
+    
+</div>
+</div>
+<div class="footer">
+    <h3>ATLEHANG MONUMENTALS</h3>
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+<script src="static/js/headstones.js"></script>
+<script src="static/js/menu.js"></script>
+<script src='static/js/nav.js'></script>
+</body>
+</html>
